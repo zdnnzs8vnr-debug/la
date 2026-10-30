@@ -1,0 +1,9 @@
+Package: com.venice.bsvision
+Name: BS Vision X
+Version: 2.0
+Architecture: iphoneos-arm
+Description: ESP box+tracer, aimbot predittivo, auto-dodge, auto-super, undetectable (no memory patch)
+Maintainer: Venice
+Author: Venice
+Section: Tweaks
+Depends: mobilesubstrate
