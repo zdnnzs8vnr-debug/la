@@ -1,0 +1,14 @@
+name: build
+on: [workflow_dispatch]
+jobs:
+  deb:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew install dpkg ldid
+      - uses: Randomblock1/theos-action@main
+      - run: make package FINALPACKAGE=1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: BSVX-deb
+          path: packages/*.deb
